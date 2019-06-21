@@ -1,0 +1,11 @@
+#centerbox {
+    background-color:lightblue;
+    max-width:80%;
+    height:1000;
+    text-align:center;
+    display:flex;
+    color:green;
+}
+h2 {
+    font-size:20px;
+}
