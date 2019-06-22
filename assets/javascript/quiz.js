@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
     // Copied from StackOverflow, a visual progress bar!
-    var timeleft = 99;
+    var timeleft = 4;
     var downloadTimer = setInterval(function(){
   document.getElementById("progressBar").value = 10 - timeleft;
   timeleft -= 1;
@@ -71,7 +71,6 @@ $(document).ready(function() {
 // B) the user hits Submit
 // ========================================================
 
-    var input = $("input");
 
     function timeUp() {
     
@@ -81,7 +80,7 @@ $(document).ready(function() {
         right = $("input[value='correct']:checked").length;
         console.log("Correct Answers: " + right);
         // And then we write the radioValue variable onto the webpage
-        $("#results-right").append("<h2>Correct: </h2>" + right);
+        
 
         // var wrong = $("input[value='wrong']:checked");
         
@@ -90,30 +89,27 @@ $(document).ready(function() {
         console.log("Incorrect Answers: " + wrong);
     };
 
-
-
-
-
-
-
-
-
-
-    function showResults() {
-        $("#results-right").html("<h2>Correct: </h2>" + right);
-        $("#results-wrong").append("<h2>Incorrect: </h2>" + wrong);
-        $("#results-unAnswered").append("<h2>Un-answered: </h2>" + unAnswered);
-    }
-
-
-
-
-
     // This hides all questions on the page.
     function hideAllQuestions() {
         $(".question1").hide();
         $(".question2").hide();
         $(".question3").hide();
     };
+
+    function showResults() {
+        // console.log($("#results-right").text());
+        // $("#results-right").css("color: red");
+        // document.getElementById('results-right').setAttribute("style", "color: red")
+        $("#results-right").html("<h2>Correct: " + right + "</h2>");
+        $("#results-wrong").append("<h2>Incorrect: </h2>" + wrong);
+        $("#results-unAnswered").append("<h2>Un-answered: </h2>" + unAnswered);
+        console.log("The results are being shown!");
+    }
+
+
+
+
+
+
 
 });

@@ -1,7 +1,7 @@
 body {
     background: url(https://starwarsblog.starwars.com/wp-content/uploads/2015/01/EP2_IA_656881-2400x1200-656036767270.jpg);
     background-position: center;
-    background-size: 100%;
+    background-size: auto;
 }
 progress {
     padding-bottom:25px;
@@ -9,19 +9,24 @@ progress {
 }
 
 #centerbox {
-    background-color:lightblue;
-    opacity:80%;
+    background-color:rgba(100, 100, 150, 0.80);
     max-width:80%;
-    height:auto;
+    height:1000px;
     padding-top:50px;
     padding-bottom:50px;
     margin: 0 auto;
 }
+
+#show-number {
+    height:25px;
+}
+
 .jumbotron {
     text-align:center;
     margin:0 20%;
     background-image:url(https://i0.wp.com/stimulatedboredom.com/wp-content/uploads/2015/11/star-wars-saga-stimulated-boredom-what-order-should-I-watch.jpg);
     background-size:100%;
+    background-position-y: 17%;
     color:white;
     font-size:60px;
 }
