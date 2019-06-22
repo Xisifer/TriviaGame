@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     var right = 0;
     var wrong = 0;
-    var unanswered = 0;
+    var unAnswered = 0;
 
 
     // Copied from StackOverflow, a visual progress bar!
@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     // This is the copied code from the Interval class activity
 
-    var number = 100;
+    var number = 5;
 
     var intervalId;
 
@@ -49,6 +49,7 @@ $(document).ready(function() {
         hideAllQuestions();
         clearInterval(intervalId);
         $("#show-number").append("<h2>TIME'S UP!</h2>");
+        timeUp();
         showResults();
       }
     }
@@ -62,14 +63,46 @@ $(document).ready(function() {
 
     // End of copied Interval class activity code.
 
-    var answers = [];
+
+// ========================================================
+// We want to check for Correct answers, NOT at the point 
+// that the button is clicked, but at the time that
+// A) the timer runs out, or
+// B) the user hits Submit
+// ========================================================
+
+    var input = $("input");
+
+    function timeUp() {
+    
+        // We take the value of the Correct radio button, 
+        // and we write it to the radioValue variable
+
+        right = $("input[value='correct']:checked").length;
+        console.log("Correct Answers: " + right);
+        // And then we write the radioValue variable onto the webpage
+        $("#results-right").append("<h2>Correct: </h2>" + right);
+
+        // var wrong = $("input[value='wrong']:checked");
+        
+        wrong = $(".questionText").length - right;
+
+        console.log("Incorrect Answers: " + wrong);
+    };
+
+
+
+
+
+
+
 
 
 
     function showResults() {
-        $("#results-right").append("<h2>Correct: </h2>" + right);
-        $("#results-wrong").append("<h2>Incorrect: </h2>" + right);
-        $("#results-unAnswered").append("<h2>Un-answered: </h2>" + right);
+        $("#results-right").html("<h2>Correct: </h2>" + right);
+        $("#results-wrong").append("<h2>Incorrect: </h2>" + wrong);
+        $("#results-unAnswered").append("<h2>Un-answered: </h2>" + unAnswered);
     }
 
 

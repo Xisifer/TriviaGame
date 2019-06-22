@@ -3,17 +3,27 @@ body {
     background-position: center;
     background-size: 100%;
 }
+progress {
+    padding-bottom:25px;
+    margin-bottom:25px;
+}
 
 #centerbox {
     background-color:lightblue;
+    opacity:80%;
     max-width:80%;
-    height:1000;
+    height:auto;
+    padding-top:50px;
+    padding-bottom:50px;
     margin: 0 auto;
 }
 .jumbotron {
     text-align:center;
     margin:0 20%;
     background-image:url(https://i0.wp.com/stimulatedboredom.com/wp-content/uploads/2015/11/star-wars-saga-stimulated-boredom-what-order-should-I-watch.jpg);
+    background-size:100%;
+    color:white;
+    font-size:60px;
 }
 .questions h2 {
     text-align:center;
