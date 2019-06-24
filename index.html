@@ -16,157 +16,426 @@
     <div class="jumbotron">
         <h1>Trivia Game!</h1>
     </div>
-        <div id="centerbox" class="container-fluid">
-            <!-- This shows the Progress Bar -->
-            <div class="row justify-content-center">
-                <div class="col-2">
-                    <div id="timerdisplay">
-                        <progress value="0" max="9" id="progressBar"></progress>
-                    </div>
+
+    <div id="centerbox" class="container-fluid">
+        <!-- This shows the Progress Bar -->
+        <div class="row justify-content-center">
+            <div class="col-2">
+                <div id="timerDisplay">
+                    <progress value="0" max="9" id="progressBar"></progress>
                 </div>
             </div>
-            <!-- This shows the amount of time left -->
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h2>Time Left: </h2>
-                    <div id="show-number">&nbsp;</div>
-                    <br>
+        </div>
+        <!-- This shows the amount of time left -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h2 id="timeLeft">Time Left: </h2>
+                <div id="show-number">&nbsp;</div>
+                <br>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div id="results-right"></div>
+                <div id="results-wrong"></div>
+                <div id="results-unAnswered"></div>
+            </div>
+        </div>
+        <!-- LIST OF QUESTIONS -->
+
+
+        <!-- 1. -->
+        <div class="row justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div id="question1" class="question1 questionText">
+                        <h2>First Question</h2>
+                    </div>
+
+
+
+                    <div class="form-check">
+                        <input class="form-check-input question1" type="radio" name="question1" id="answer1a" value="correct">
+                        <label class="form-check-label question1" for="exampleRadios1">
+                            CORRECT choice
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input question1" type="radio" name="question1" id="answer1b" value="wrong">
+                        <label class="form-check-label question1" for="exampleRadios2">
+                            Second choice
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input question1" type="radio" name="question1" id="answer1c" value="wrong">
+                        <label class="form-check-label question1" for="exampleRadios2">
+                            Third choice
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input question1" type="radio" name="question1" id="answer1d" value="wrong">
+                        <label class="form-check-label question1" for="exampleRadios2">
+                            Fourth choice
+                        </label>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+        </div>
+        <!-- 2. -->
+        <div class="row justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div id="question2" class="question2 questionText">
+                        <h2>Second Question</h2>
+                    </div>
+
+
+
+                    <div class="form-check">
+                        <input class="form-check-input question2" type="radio" name="question2" id="answer2a" value="wrong">
+                        <label class="form-check-label question2" for="exampleRadios1">
+                            First choice
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input question2" type="radio" name="question2" id="answer2b" value="wrong">
+                        <label class="form-check-label question2" for="exampleRadios2">
+                            Second choice
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input question2" type="radio" name="question2" id="answer2c" value="correct">
+                        <label class="form-check-label question2" for="exampleRadios2">
+                            CORRECT choice
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input question2" type="radio" name="question2" id="answer2d" value="wrong">
+                        <label class="form-check-label question2" for="exampleRadios2">
+                            Fourth choice
+                        </label>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+        </div>
+        <!-- 3. -->
+        <div class="row justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div id="question3" class="question3 questionText">
+                        <h2>Third Question</h2>
+                    </div>
+
+
+
+                    <div class="form-check">
+                        <input class="form-check-input question3" type="radio" name="question3" id="answer3a" value="wrong">
+                        <label class="form-check-label question3" for="exampleRadios1">
+                            First choice
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input question3" type="radio" name="question3" id="answer3b" value="wrong">
+                        <label class="form-check-label question3" for="exampleRadios2">
+                            Second choice
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input question3" type="radio" name="question3" id="answer3c" value="correct">
+                        <label class="form-check-label question3" for="exampleRadios2">
+                            CORRECT choice
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input question3" type="radio" name="question3" id="answer3d" value="wrong">
+                        <label class="form-check-label question3" for="exampleRadios2">
+                            Fourth choice
+                        </label>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+        </div>
+        <!-- 4. -->
+        <div class="row justify-content-center">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div id="question4" class="question4 questionText">
+                    <h2>Fourth Question</h2>
+                </div>
+
+
+
+                <div class="form-check">
+                    <input class="form-check-input question4" type="radio" name="question4" id="answer4a" value="wrong">
+                    <label class="form-check-label question4" for="exampleRadios1">
+                        First choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question4" type="radio" name="question4" id="answer4b" value="wrong">
+                    <label class="form-check-label question4" for="exampleRadios2">
+                        Second choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question4" type="radio" name="question3" id="answer4c" value="correct">
+                    <label class="form-check-label question4" for="exampleRadios4">
+                        CORRECT choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question4" type="radio" name="question4" id="answer4d" value="wrong">
+                    <label class="form-check-label question4" for="exampleRadios2">
+                        Fourth choice
+                    </label>
                 </div>
             </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- 5. -->
+        <div class="row justify-content-center">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div id="question5" class="question5 questionText">
+                    <h2>Fifth Question</h2>
+                </div>
 
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div id="results-right"></div>
-                    <div id="results-wrong"></div>
-                    <div id="results-unAnswered"></div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input question5" type="radio" name="question5" id="answer5a" value="wrong">
+                    <label class="form-check-label question5" for="exampleRadios1">
+                        First choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question5" type="radio" name="question5" id="answer5b" value="wrong">
+                    <label class="form-check-label question5" for="exampleRadios2">
+                        Second choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question5" type="radio" name="question6" id="answer6c" value="correct">
+                    <label class="form-check-label question5" for="exampleRadios2">
+                        CORRECT choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question5" type="radio" name="question6" id="answer6d" value="wrong">
+                    <label class="form-check-label question5" for="exampleRadios2">
+                        Fourth choice
+                    </label>
                 </div>
             </div>
-            <!-- LIST OF QUESTIONS -->
-            <div class="row justify-content-center">
-                    <div class="col-2"></div>
-                    <div class="col-8">
-                        <div id="question1" class="question1 questionText">
-                            <h2>First Question</h2>
-                        </div>
-    
-
-    
-                        <div class="form-check">
-                            <input class="form-check-input question1" type="radio" name="question1" id="answer1a" value="correct">
-                            <label class="form-check-label question1" for="exampleRadios1">
-                                CORRECT choice
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input question1" type="radio" name="question1" id="answer1b" value="wrong">
-                            <label class="form-check-label question1" for="exampleRadios2">
-                                Second choice
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input question1" type="radio" name="question1" id="answer1c" value="wrong">
-                            <label class="form-check-label question1" for="exampleRadios2">
-                                Third choice
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input question1" type="radio" name="question1" id="answer1d" value="wrong">
-                            <label class="form-check-label question1" for="exampleRadios2">
-                                Fourth choice
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-2"></div>
-            </div>
-
-
-            <div class="row justify-content-center">
-                    <div class="col-2"></div>
-                    <div class="col-8">
-                        <div id="question2" class="question2 questionText">
-                            <h2>Second Question</h2>
-                        </div>
-    
-
-    
-                        <div class="form-check">
-                            <input class="form-check-input question2" type="radio" name="question2" id="answer2a" value="wrong">
-                            <label class="form-check-label question2" for="exampleRadios1">
-                                First choice
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input question2" type="radio" name="question2" id="answer2b" value="wrong">
-                            <label class="form-check-label question2" for="exampleRadios2">
-                                Second choice
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input question2" type="radio" name="question2" id="answer2c" value="correct">
-                            <label class="form-check-label question2" for="exampleRadios2">
-                                CORRECT choice
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input question2" type="radio" name="question2" id="answer2d" value="wrong">
-                            <label class="form-check-label question2" for="exampleRadios2">
-                                Fourth choice
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-2"></div>
-            </div>
-
-            <div class="row justify-content-center">
-                    <div class="col-2"></div>
-                    <div class="col-8">
-                        <div id="question1" class="question3 questionText">
-                            <h2>Third Question</h2>
-                        </div>
-    
-
-    
-                        <div class="form-check">
-                            <input class="form-check-input question1" type="radio" name="question3" id="answer3a" value="wrong">
-                            <label class="form-check-label question1" for="exampleRadios1">
-                                First choice
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input question1" type="radio" name="question3" id="answer3b" value="wrong">
-                            <label class="form-check-label question1" for="exampleRadios2">
-                                Second choice
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input question1" type="radio" name="question3" id="answer3c" value="CORRECT">
-                            <label class="form-check-label question1" for="exampleRadios2">
-                                CORRECT choice
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input question1" type="radio" name="question3" id="answer3d" value="wrong">
-                            <label class="form-check-label question1" for="exampleRadios2">
-                                Fourth choice
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-2"></div>
-            </div>
-
-
-            <!-- <div class="row justify-content-center">
-                <div class="col-12">
-                    <div id="#results-right"></div>
-                    <div id="#results-wrong"></div>
-                    <div id="#results-unAnswered"></div>
+            <div class="col-2"></div>
+        </div>
+        <!-- 6. -->
+        <div class="row justify-content-center">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div id="question6" class="question6 questionText">
+                    <h2>Sixth Question</h2>
                 </div>
-            </div> -->
 
 
 
+                <div class="form-check">
+                    <input class="form-check-input question6" type="radio" name="question6" id="answer6a" value="wrong">
+                    <label class="form-check-label question6" for="exampleRadios1">
+                        First choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question6" type="radio" name="question6" id="answer6b" value="wrong">
+                    <label class="form-check-label question6" for="exampleRadios2">
+                        Second choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question6" type="radio" name="question6" id="answer6c" value="correct">
+                    <label class="form-check-label question6" for="exampleRadios2">
+                        CORRECT choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question6" type="radio" name="question6" id="answer6d" value="wrong">
+                    <label class="form-check-label question6" for="exampleRadios2">
+                        Fourth choice
+                    </label>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- 7. -->
+        <div class="row justify-content-center">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div id="question7" class="question7 questionText">
+                    <h2>Seventh Question</h2>
+                </div>
 
 
+
+                <div class="form-check">
+                    <input class="form-check-input question7" type="radio" name="question7" id="answer7a" value="wrong">
+                    <label class="form-check-label question7" for="exampleRadios1">
+                        First choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question7" type="radio" name="question7" id="answer7b" value="wrong">
+                    <label class="form-check-label question7" for="exampleRadios2">
+                        Second choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question7" type="radio" name="question7" id="answer7c" value="CORRECT">
+                    <label class="form-check-label question7" for="exampleRadios2">
+                        CORRECT choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question7" type="radio" name="question7" id="answer7d" value="wrong">
+                    <label class="form-check-label question7" for="exampleRadios2">
+                        Fourth choice
+                    </label>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- 8. -->
+        <div class="row justify-content-center">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div id="question8" class="question8 questionText">
+                    <h2>Eighth Question</h2>
+                </div>
+
+
+
+                <div class="form-check">
+                    <input class="form-check-input question8" type="radio" name="question8" id="answer8a" value="wrong">
+                    <label class="form-check-label question8" for="exampleRadios1">
+                        First choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question8" type="radio" name="question8" id="answer8b" value="wrong">
+                    <label class="form-check-label question8" for="exampleRadios2">
+                        Second choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question8" type="radio" name="question8" id="answer8c" value="correct">
+                    <label class="form-check-label question8" for="exampleRadios2">
+                        CORRECT choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question8" type="radio" name="question8" id="answer8d" value="wrong">
+                    <label class="form-check-label question8" for="exampleRadios2">
+                        Fourth choice
+                    </label>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- 9. -->
+        <div class="row justify-content-center">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div id="question9" class="question9 questionText">
+                    <h2>Ninth Question</h2>
+                </div>
+
+
+
+                <div class="form-check">
+                    <input class="form-check-input question9" type="radio" name="question9" id="answer9a" value="wrong">
+                    <label class="form-check-label question9" for="exampleRadios1">
+                        First choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question9" type="radio" name="question9" id="answer9b" value="wrong">
+                    <label class="form-check-label question9" for="exampleRadios2">
+                        Second choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question9" type="radio" name="question9" id="answer9c" value="correct">
+                    <label class="form-check-label question9" for="exampleRadios2">
+                        CORRECT choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question9" type="radio" name="question9" id="answer9d" value="wrong">
+                    <label class="form-check-label question9" for="exampleRadios2">
+                        Fourth choice
+                    </label>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- 10. -->
+        <div class="row justify-content-center">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div id="question10" class="question10 questionText">
+                    <h2>Tenth Question</h2>
+                </div>
+
+
+
+                <div class="form-check">
+                    <input class="form-check-input question1" type="radio" name="question10" id="answer10a" value="wrong">
+                    <label class="form-check-label question1" for="exampleRadios1">
+                        First choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question10" type="radio" name="question10" id="answer10b" value="wrong">
+                    <label class="form-check-label question10" for="exampleRadios2">
+                        Second choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question10" type="radio" name="question10" id="answer10c" value="correct">
+                    <label class="form-check-label question10" for="exampleRadios2">
+                        CORRECT choice
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input question10" type="radio" name="question10" id="answer10d" value="wrong">
+                    <label class="form-check-label question10" for="exampleRadios2">
+                        Fourth choice
+                    </label>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+
+        <!-- This is the Play Again button, initially hidden from view -->
+        <div class="row justify-content-center">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <button type="submit" class="btn btn-primary justify-content-center" id="replayButton">Play Again?</button>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <!-- This is the Submit button -->
+        <div class="row justify-content-center">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <button type="submit" class="btn btn-primary justify-content-center" id="submitButton">Submit</button>
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+    <!-- This is the end of the Centerbox -->
+    </div>
 
     
     <script src="assets/javascript/quiz.js"></script>    

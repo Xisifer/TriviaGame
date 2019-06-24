@@ -1,7 +1,7 @@
 body {
     background: url(https://starwarsblog.starwars.com/wp-content/uploads/2015/01/EP2_IA_656881-2400x1200-656036767270.jpg);
     background-position: center;
-    background-size: auto;
+    background-height: auto;
 }
 progress {
     padding-bottom:25px;
@@ -11,10 +11,12 @@ progress {
 #centerbox {
     background-color:rgba(100, 100, 150, 0.80);
     max-width:80%;
-    height:1000px;
+    height:auto;
     padding-top:50px;
     padding-bottom:50px;
     margin: 0 auto;
+    border:10px ridge teal;
+    color:white;    
 }
 
 #show-number {
@@ -30,6 +32,12 @@ progress {
     color:white;
     font-size:60px;
 }
+
+.jumbotron h1 {
+    background-color:rgba(100, 100, 150, 0.80);
+    padding-top:5px;
+    padding-bottom:5px;
+}
 .questions h2 {
     text-align:center;
 
@@ -39,6 +47,22 @@ h2 {
     font-size:20px;
     text-align:center;
 }
+h1 {
+    font-size:50px;
+    text-align:center;
+}
 input {
     padding-left:25%;
+}
+.btn {
+    padding: .375rem 9.75rem;
+}
+#results-right {
+    margin:50px 0px 10px 0px;
+}
+#results-wrong {
+    margin:10px 0px 10px 0px;
+}
+#results-unAnswered {
+    margin:10px 0px 10px 0px;
 }
