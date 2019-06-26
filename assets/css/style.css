@@ -43,6 +43,14 @@ progress {
 
 }
 
+.questionText {
+    padding:40px 0px 10px 0px;
+}
+
+.form-check-label {
+    padding:5px 0px 5px 0px;
+}
+
 h2 {
     font-size:20px;
     text-align:center;
