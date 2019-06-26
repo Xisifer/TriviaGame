@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 
   // Copied from StackOverflow, a visual progress bar!
-  var timeleft = 60;
+  var timeleft = 120;
   var downloadTimer = setInterval(function(){
     document.getElementById("progressBar").value = 10 - timeleft;
     timeleft -= 1;
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
   // This is the copied code from the Interval class activity
 
-  var number = 60;
+  var number = 120;
 
   var intervalId;
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
     if (number > 0) {
       stop();
     } else {
-      number = 60;
+      number = 120;
     }
     intervalId = setInterval(decrement, 1000);
   }
@@ -173,9 +173,9 @@ $(document).ready(function() {
   // This resets everything if they want to play again
   function playAgain() {
     // Resets the Progress Bar
-    timeleft = 60;
+    timeleft = 120;
     // Resets the Timer
-    number = 60;
+    number = 120;
     showAllQuestions();
     run(); // starts the timer counting down again
     $("#results-right").hide();
